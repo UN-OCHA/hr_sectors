@@ -1,0 +1,36 @@
+<?php
+/**
+ * @file
+ * hr_sectors.install
+ */
+
+/**
+ * Implements hook_enable().
+ */
+function hr_sectors_enable() {
+  _hr_sectors_url_rebuild();
+}
+
+/**
+ * Implements hook_disable().
+ */
+function hr_sectors_disable() {
+  _hr_sectors_url_rebuild();
+}
+
+/**
+ * Rebuild URL aliases
+ */
+function _hr_sectors_url_rebuild() {
+  // Load tids
+  $voc = taxonomy_vocabulary_machine_name_load('clusters');
+  $query = new EntityFieldQuery();
+  
+  $result = $query
+    ->entityCondition('entity_type', 'taxonomy_term')
+    ->propertyCondition('vid', $voc->vid)
+    ->execute();
+  $tids = array_keys($result['taxonomy_term']);
+  
+  pathauto_taxonomy_term_update_alias_multiple($tids, 'update');
+}
