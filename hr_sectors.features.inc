@@ -5,22 +5,37 @@
  */
 
 /**
- * Implements hook_taxonomy_default_vocabularies_alter().
+ * Implements hook_ctools_plugin_api().
  */
-function hr_sectors_taxonomy_default_vocabularies_alter(&$data) {
-  if (isset($data['clusters'])) {
-    $data['clusters']['name'] = 'Sectors'; /* WAS: 'Clusters' */
+function hr_sectors_ctools_plugin_api($module = NULL, $api = NULL) {
+  if ($module == "feeds" && $api == "feeds_importer_default") {
+    return array("version" => "1");
+  }
+  if ($module == "strongarm" && $api == "strongarm") {
+    return array("version" => "1");
   }
 }
 
 /**
- * Implements hook_views_default_views_alter().
+ * Implements hook_views_api().
  */
-function hr_sectors_views_default_views_alter(&$data) {
-  if (isset($data['clusters'])) {
-    $data['clusters']->display['block_1']->display_options['block_description'] = 'Sectors Home Page'; /* WAS: 'Clusters Home Page' */
-    $data['clusters']->display['default']->display_options['title'] = 'Sectors'; /* WAS: 'Clusters' */
-    $data['clusters']->display['page']->display_options['path'] = 'sectors'; /* WAS: 'clusters' */
-    $data['clusters']->human_name = 'Sectors'; /* WAS: 'Clusters' */
-  }
+function hr_sectors_views_api($module = NULL, $api = NULL) {
+  return array("api" => "3.0");
+}
+
+/**
+ * Implements hook_node_info().
+ */
+function hr_sectors_node_info() {
+  $items = array(
+    'hr_sector' => array(
+      'name' => t('Sector'),
+      'base' => 'node_content',
+      'description' => t('An official sector'),
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
+  );
+  return $items;
 }

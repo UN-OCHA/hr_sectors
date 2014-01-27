@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Code for the Humanitarianresponse Sectors feature.
+ * Code for the Sectors feature.
  */
 
 include_once 'hr_sectors.features.inc';
