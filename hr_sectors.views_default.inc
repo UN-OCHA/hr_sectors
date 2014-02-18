@@ -50,7 +50,7 @@ function hr_sectors_views_default_views() {
   $handler->display->display_options['fields']['path']['label'] = '';
   $handler->display->display_options['fields']['path']['exclude'] = TRUE;
   $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
-  /* Field: Content: Website */
+  /* Field: Field: Website */
   $handler->display->display_options['fields']['field_website']['id'] = 'field_website';
   $handler->display->display_options['fields']['field_website']['table'] = 'field_data_field_website';
   $handler->display->display_options['fields']['field_website']['field'] = 'field_website';
@@ -60,7 +60,7 @@ function hr_sectors_views_default_views() {
   $handler->display->display_options['fields']['field_website']['empty'] = '[path]';
   $handler->display->display_options['fields']['field_website']['click_sort_column'] = 'url';
   $handler->display->display_options['fields']['field_website']['type'] = 'link_plain';
-  /* Field: Content: Title */
+  /* Field: Field: Title */
   $handler->display->display_options['fields']['title_field']['id'] = 'title_field';
   $handler->display->display_options['fields']['title_field']['table'] = 'field_data_title_field';
   $handler->display->display_options['fields']['title_field']['field'] = 'title_field';

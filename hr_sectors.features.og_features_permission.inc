@@ -54,6 +54,13 @@ function hr_sectors_og_features_default_permissions() {
     ),
   );
 
+  // Exported og permission: 'node:hr_sector:edit group features'
+  $permissions['node:hr_sector:edit group features'] = array(
+    'roles' => array(
+      'manager' => 'manager',
+    ),
+  );
+
   // Exported og permission: 'node:hr_sector:manage members'
   $permissions['node:hr_sector:manage members'] = array(
     'roles' => array(
