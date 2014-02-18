@@ -156,14 +156,14 @@ function hr_sectors_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'panelizer_node:hr_sector_allowed_layouts_default';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['panelizer_node:hr_sector_allowed_layouts_default'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'panelizer_node:hr_sector_allowed_types_default';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['panelizer_node:hr_sector_allowed_types_default'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -180,6 +180,9 @@ function hr_sectors_strongarm() {
     'entity_view' => 'entity_view',
     'menu_tree' => 'menu_tree',
     'other' => 'other',
+    'fieldable_panels_pane' => 0,
+    'views' => 0,
+    'views_panes' => 0,
   );
   $export['panelizer_node:hr_sector_default'] = $strongarm;
 
