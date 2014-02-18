@@ -64,7 +64,7 @@ function hr_sectors_feeds_importer_default() {
           ),
           4 => array(
             'source' => 'Icon',
-            'target' => 'field_image:uri',
+            'target' => 'field_image',
             'unique' => FALSE,
           ),
           5 => array(
