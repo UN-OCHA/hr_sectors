@@ -69,6 +69,16 @@ function hr_sectors_og_features_default_permissions() {
     ),
   );
 
+  // Exported og permission: 'node:hr_sector:subscribe'
+  $permissions['node:hr_sector:subscribe'] = array(
+    'roles' => array(),
+  );
+
+  // Exported og permission: 'node:hr_sector:subscribe without approval'
+  $permissions['node:hr_sector:subscribe without approval'] = array(
+    'roles' => array(),
+  );
+
   // Exported og permission: 'node:hr_sector:update group'
   $permissions['node:hr_sector:update group'] = array(
     'roles' => array(

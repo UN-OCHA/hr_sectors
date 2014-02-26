@@ -92,7 +92,7 @@ function hr_sectors_field_default_field_bases() {
           'hr_sector' => 'hr_sector',
         ),
       ),
-      'profile2_private' => 0,
+      'profile2_private' => FALSE,
       'target_type' => 'node',
     ),
     'translatable' => 0,
