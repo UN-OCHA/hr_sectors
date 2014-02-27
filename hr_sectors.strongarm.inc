@@ -65,16 +65,16 @@ function hr_sectors_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'language' => array(
-          'weight' => '8',
+          'weight' => '10',
         ),
         'og_menu' => array(
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '10',
+          'weight' => '12',
         ),
         'redirect' => array(
-          'weight' => '9',
+          'weight' => '11',
         ),
       ),
       'display' => array(),
