@@ -42,6 +42,7 @@ features[field_instance][] = node-hr_sector-field_mailchimp_api_key
 features[field_instance][] = node-hr_sector-field_mailchimp_list
 features[field_instance][] = node-hr_sector-field_social_media
 features[field_instance][] = node-hr_sector-field_website
+features[field_instance][] = node-hr_sector-group_access
 features[field_instance][] = node-hr_sector-group_group
 features[field_instance][] = node-hr_sector-title_field
 features[node][] = hr_sector
