@@ -92,6 +92,21 @@ function hr_sectors_feeds_importer_default() {
             'target' => 'group_access',
             'unique' => FALSE,
           ),
+          10 => array(
+            'source' => 'Acronym:en',
+            'target' => 'field_acronym:et:en',
+            'unique' => FALSE,
+          ),
+          11 => array(
+            'source' => 'Acronym:fr',
+            'target' => 'field_acronym:et:fr',
+            'unique' => FALSE,
+          ),
+          12 => array(
+            'source' => 'Acronym:es',
+            'target' => 'field_acronym:et:es',
+            'unique' => FALSE,
+          ),
         ),
         'update_existing' => '2',
         'input_format' => 'plain_text',

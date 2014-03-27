@@ -37,6 +37,7 @@ features[feeds_importer][] = hr_sectors
 features[field_base][] = field_sector
 features[field_base][] = field_sectors
 features[field_instance][] = node-hr_sector-body
+features[field_instance][] = node-hr_sector-field_acronym
 features[field_instance][] = node-hr_sector-field_email
 features[field_instance][] = node-hr_sector-field_image
 features[field_instance][] = node-hr_sector-field_mailchimp_api_key

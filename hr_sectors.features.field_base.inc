@@ -38,7 +38,7 @@ function hr_sectors_field_default_field_bases() {
       'handler_settings' => array(
         'behaviors' => array(
           'views-select-list' => array(
-            'status' => 0,
+            'status' => 1,
           ),
         ),
         'sort' => array(
@@ -48,6 +48,7 @@ function hr_sectors_field_default_field_bases() {
           'hr_sector' => 'hr_sector',
         ),
       ),
+      'profile2_private' => FALSE,
       'target_type' => 'node',
     ),
     'translatable' => 0,
