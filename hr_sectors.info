@@ -72,6 +72,7 @@ features[variable][] = menu_parent_hr_sector
 features[variable][] = node_options_hr_sector
 features[variable][] = node_preview_hr_sector
 features[variable][] = node_submitted_hr_sector
+features[variable][] = og_features_settings_node_hr_sector
 features[variable][] = panelizer_defaults_node_hr_sector
 features[variable][] = panelizer_node:hr_sector_allowed_layouts
 features[variable][] = panelizer_node:hr_sector_allowed_layouts_default
