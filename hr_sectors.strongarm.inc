@@ -133,6 +133,7 @@ function hr_sectors_strongarm() {
   $strongarm->name = 'og_features_settings_node_hr_sector';
   $strongarm->value = array(
     'hr_contacts' => '0',
+    'hr_datasets' => '0',
     'hr_disasters' => '0',
     'hr_documents' => '2',
     'hr_events' => '2',
