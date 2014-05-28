@@ -132,6 +132,7 @@ function hr_sectors_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'og_features_settings_node_hr_sector';
   $strongarm->value = array(
+    'hr_assessments' => '0',
     'hr_contacts' => '0',
     'hr_datasets' => '0',
     'hr_disasters' => '0',
