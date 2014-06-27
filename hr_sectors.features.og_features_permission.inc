@@ -47,6 +47,13 @@ function hr_sectors_og_features_default_permissions() {
     ),
   );
 
+  // Exported og permission: 'node:hr_sector:assign contributor role'
+  $permissions['node:hr_sector:assign contributor role'] = array(
+    'roles' => array(
+      'manager' => 'manager',
+    ),
+  );
+
   // Exported og permission: 'node:hr_sector:assign manager role'
   $permissions['node:hr_sector:assign manager role'] = array(
     'roles' => array(
