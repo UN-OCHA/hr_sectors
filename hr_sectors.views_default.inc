@@ -93,7 +93,7 @@ function hr_sectors_views_default_views() {
 
   /* Display: Global */
   $handler = $view->new_display('page', 'Global', 'global');
-  $handler->display->display_options['path'] = 'clusters/global';
+  $handler->display->display_options['path'] = 'coordination/clusters/global';
   $translatables['hr_sectors'] = array(
     t('Master'),
     t('more'),
