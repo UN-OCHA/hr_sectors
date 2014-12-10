@@ -10,6 +10,14 @@
 function hr_sectors_og_features_default_roles() {
   $roles = array();
 
+  // Exported OG Role: 'node:hr_sector:contributor'.
+  $roles['node:hr_sector:contributor'] = array(
+    'gid' => 0,
+    'group_type' => 'node',
+    'group_bundle' => 'hr_sector',
+    'name' => 'contributor',
+  );
+
   // Exported OG Role: 'node:hr_sector:editor'.
   $roles['node:hr_sector:editor'] = array(
     'gid' => 0,
@@ -25,15 +33,6 @@ function hr_sectors_og_features_default_roles() {
     'group_bundle' => 'hr_sector',
     'name' => 'manager',
   );
-
-  // Exported OG Role: 'node:hr_sector:contributor'.
-  $roles['node:hr_sector:contributor'] = array(
-    'gid' => 0,
-    'group_type' => 'node',
-    'group_bundle' => 'hr_sector',
-    'name' => 'contributor',
-  );
-
 
   return $roles;
 }
