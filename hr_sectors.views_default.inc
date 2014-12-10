@@ -31,9 +31,25 @@ function hr_sectors_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['style_options']['grouping'] = array(
+    0 => array(
+      'field' => 'field_sector_type',
+      'rendered' => 1,
+      'rendered_strip' => 0,
+    ),
+  );
   $handler->display->display_options['style_options']['row_class'] = 'col-md-4';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Field: Content: Icon */
+  /* Field: Content: Type */
+  $handler->display->display_options['fields']['field_sector_type']['id'] = 'field_sector_type';
+  $handler->display->display_options['fields']['field_sector_type']['table'] = 'field_data_field_sector_type';
+  $handler->display->display_options['fields']['field_sector_type']['field'] = 'field_sector_type';
+  $handler->display->display_options['fields']['field_sector_type']['label'] = '';
+  $handler->display->display_options['fields']['field_sector_type']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_sector_type']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_sector_type']['alter']['text'] = '<div class="clearfix"></div>[field_sector_type]';
+  $handler->display->display_options['fields']['field_sector_type']['element_label_colon'] = FALSE;
+  /* Field: Content: Image */
   $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
   $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
@@ -102,6 +118,7 @@ function hr_sectors_views_default_views() {
     t('Sort by'),
     t('Asc'),
     t('Desc'),
+    t('<div class="clearfix"></div>[field_sector_type]'),
     t('[path]'),
     t('Global'),
   );

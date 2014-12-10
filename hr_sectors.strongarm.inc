@@ -65,16 +65,16 @@ function hr_sectors_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'language' => array(
-          'weight' => '12',
+          'weight' => '13',
         ),
         'og_menu' => array(
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '14',
+          'weight' => '15',
         ),
         'redirect' => array(
-          'weight' => '13',
+          'weight' => '14',
         ),
       ),
       'display' => array(),
@@ -139,6 +139,7 @@ function hr_sectors_strongarm() {
     'hr_disasters' => '0',
     'hr_documents' => '2',
     'hr_events' => '2',
+    'hr_fundings' => '0',
     'hr_infographics' => '3',
     'hr_news' => '2',
     'hr_offices' => '0',
