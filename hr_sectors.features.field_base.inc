@@ -77,6 +77,7 @@ function hr_sectors_field_default_field_bases() {
       'allowed_values' => array(
         'global' => 'Global clusters',
         'aor' => 'Areas of Responsibility',
+        'working_group' => 'Working Groups',
       ),
       'allowed_values_function' => '',
       'entity_translation_sync' => FALSE,

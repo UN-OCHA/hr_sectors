@@ -41,9 +41,9 @@ function hr_sectors_views_api($module = NULL, $api = NULL) {
 function hr_sectors_node_info() {
   $items = array(
     'hr_sector' => array(
-      'name' => t('Sector'),
+      'name' => t('Global bundle'),
       'base' => 'node_content',
-      'description' => t('An official sector'),
+      'description' => t('Global cluster/sector/working group'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',
