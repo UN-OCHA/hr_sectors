@@ -17,6 +17,10 @@ class RestfulEntityNodeGlobalClusters extends \RestfulEntityBaseNode {
       'property' => 'field_acronym',
     );
 
+    $public_fields['type'] = array(
+      'property' => 'field_sector_type',
+    );
+
     $public_fields['homepage'] = array(
       'property' => 'field_website',
       'sub_property' => 'url',

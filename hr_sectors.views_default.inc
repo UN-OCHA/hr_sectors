@@ -106,6 +106,14 @@ function hr_sectors_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'hr_sector' => 'hr_sector',
   );
+  /* Filter criterion: Content: Type (field_sector_type) */
+  $handler->display->display_options['filters']['field_sector_type_value']['id'] = 'field_sector_type_value';
+  $handler->display->display_options['filters']['field_sector_type_value']['table'] = 'field_data_field_sector_type';
+  $handler->display->display_options['filters']['field_sector_type_value']['field'] = 'field_sector_type_value';
+  $handler->display->display_options['filters']['field_sector_type_value']['operator'] = 'not';
+  $handler->display->display_options['filters']['field_sector_type_value']['value'] = array(
+    'working_group' => 'working_group',
+  );
 
   /* Display: Global */
   $handler = $view->new_display('page', 'Global', 'global');
