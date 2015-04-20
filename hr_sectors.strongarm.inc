@@ -2895,7 +2895,7 @@ function hr_sectors_strongarm() {
     'entity_view-wysiwyg_profile' => 0,
     'entity_view-rules_config' => 0,
     'fieldable_panels_pane-hr_users' => 0,
-    'fieldable_panels_pane-fieldable_panels_pane' => 0,
+    'fieldable_panels_pane-fieldable_panels_pane' => 'fieldable_panels_pane-fieldable_panels_pane',
     'fieldable_panels_pane-hr_assessments' => 0,
     'fieldable_panels_pane-hr_contacts' => 0,
     'fieldable_panels_pane-hr_documents' => 0,
